@@ -36,7 +36,8 @@ body {
 
 .navbar-panel {
     flex-grow: 1;
-    display: flex;
+    display: contents;
+    position: absolute;
     align-items: center;
     justify-content: space-between;
 }
