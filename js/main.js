@@ -3,6 +3,15 @@ $(document).ready(function () {
     var counterUp = $(".counter-up"); // Кнопка увеличения этажа
     var counterDown = $(".counter-down"); // Кнопка уменьшения этажа
     var floorPath = $(".home-image path"); // Каждый отдельный этаж в SVG
+    var modal = $(".modal"); // Модальное окно
+    var modalCloseButton = $(".modal-close-button");
+    var viewFlatsButton = $(".view-flats");
+    var menuButton = $(".menu-button");
+    var navbarPanel = $(".navbar-panel");
+
+    menuButton.on("click", function(){
+        navbarPanel.toggle("fast");
+    })
 
     // Функция про наведении мышкой на этаж
     floorPath.on("mouseover", function () { 
@@ -10,7 +19,12 @@ $(document).ready(function () {
     currentFloor = $(this).attr("data-floor"); // Получаем значение текущего этажа
     $(".counter").text(currentFloor); // Записываем значение этажа в счетчик справа
     });
+
+    floorPath.on("click", toggleModal); // При клике на этаж - вызвать окно
     
+    modalCloseButton.on("click", toggleModal); // При клике на крестик - закрыть окно
+
+    viewFlatsButton.on("click", toggleModal); // При клике на кнопку "Показать квартиры на этаже" - показывает квартиры на этаже
     
     counterUp.on("click", function () { // Отслеживаем клик по кнопке вверх
         if (currentFloor < 18) { // Проверяем значение этажа, оно не должно быть больше 18
@@ -32,4 +46,8 @@ $(document).ready(function () {
         }
     })
     
+    function toggleModal() { // Функция открыть - закрыть окно
+        modal.toggleClass("is-open");
+    }  
+
 });

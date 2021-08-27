@@ -8,10 +8,6 @@
     font-display: swap;
 }
 
-
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -27,12 +23,28 @@ body {
     border-bottom: 4px solid #3596F5;
 }
 
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
 .navbar {
-    max-width: 1280px; 
-    margin: auto; 
     display: flex; /* сделали элемент гибким */
     justify-content: space-between; /* расставили элементы по краям */
     align-items: center;
+}
+
+.navbar-panel {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .navbar-menu {
@@ -75,9 +87,11 @@ body {
     text-decoration: none;
 }
 
+.menu-button {
+    display: none;
+}
+
 .main {
-    max-width: 1280px;
-    margin: auto;
     padding-top: 54px;
     display: flex;
 }
@@ -90,6 +104,11 @@ body {
     align-items: center;
     justify-content: space-between;
     
+}
+
+.home-image {
+    width: 100%;
+    max-width: 734px;
 }
 
 .home-image path {
@@ -117,7 +136,7 @@ path.current-floor{
     cursor: pointer;
 }
 
-.counter-arrow-down{
+.counter-arrow-down {
     transform: rotateX(180deg); /* Развернул нижнюю кнопку на 180 */
 }
 
@@ -130,7 +149,7 @@ path.current-floor{
     margin: 0;
 }
 
-.counter {
+.floor-counter {
     font-family: "Bebas Neue Regular Regular", sans-serif;
     color: #635854;
     font-size: 124px;
@@ -145,4 +164,287 @@ path.current-floor{
     padding: 16px 36px;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+.modal {
+    position: fixed; /* Фиксированная позиция поверх всего сайта */
+    left: 0; /* Приелеиваем к левому краю */
+    top: 0; /* Приклеиваем к верху */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /*  Полупрозрачный фоновый черный цвет */
+    display: flex; /* Родительский элемент - гибкий */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.2s;
+}
+
+.is-open {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 1000px;
+    min-height: 565px;
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    transform: translateY(-10%);
+    transition: transform 0.2s, opacity 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0; 
+}
+
+.is-open > .modal-dialog {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-image {
+    background-color: #EBEBEB;
+    width: 60%;
+    text-align: center; /* Весь текст - по центру */
+    padding: 50px;
+}
+
+.flats path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.flats path:hover {
+    opacity: 1;
+}
+
+.modal-title {
+    font-family: "Bebas Neue Regular Regular", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.modal-info {
+    padding: 50px 46px;
+    width: 40%;
+}
+
+.flats {
+    max-width: 433px;
+    width: 100%;
+}
+
+.flat-list {
+    padding: 0;
+    list-style: none; /* Отключаю точки в ненумерованном списке */
+    margin-top: 55px;
+}
+
+.flat-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #635854;
+    text-decoration: none; /* Убираю подчеркивания у ссылки */
+}
+
+.flat-item {
+    margin-bottom: 10px;
+}
+
+.flat-link:hover {
+    color: #3596F5; /* При наведении ссылка выделяется голубым цветом */
+    text-decoration: underline;/* При наведении ссылка подчеркивается линией снизу */
+}
+
+.modal-alert {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #635854;
+    margin-top: 56px;
+}
+
+.modal-close-button {
+    position: absolute;
+    right: 27px;
+    top: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.down-bar {
+    background-color: #D7D7D7;
+    display: flex;
+    align-items: center;
+    border-top: 4px solid #3596F5;
+    height: 120px;
+    margin-top: 60px;
+}
+
+.down-logo {
+    margin-left: 50px;
+}
+
+.downbar-contacts {
+    margin-left: 40px;
+}
+
+.facebook-logo {
+    margin-left: 60px;
+}
+
+.instagram-logo {
+    margin-left: 5px;
+}
+
+.twitter-logo {
+    margin-left: 5px;
+}
+
+.youtube-logo {
+    margin-left: 5px;
+}
+
+.downbar-nav {
+    margin-left: 355px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    justify-content: space-between; 
+    margin: 20px;
+}
+
+.downbar-menu {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.downbar-item {
+    list-style: none;
+    margin: 20px;
+
+}
+
+.downbar-link {
+    text-decoration: none;
+    font-style: normal;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #635854;
+}
+
+.downbar-text {
+    display: block;
+    color: #635854;
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.downbar-phone {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #635854;
+    text-decoration: none;
+}
+ 
+@media (max-width: 1400px) {
+    .container {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .navbar-item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main-info {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 760px;
+    }
+    .navbar-panel {
+        display: none;
+        top: 60px;
+        right: 60px;
+        background-color: #635854;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .navbar-menu {
+        display: block;
+
+    }
+
+    .navbar-item {
+        margin-bottom: 20px;
+    }
+
+    .navbar-contacts {
+        text-align: center;
+    }
+
+    .menu-button {
+        background-color: transparent;
+        width: 40px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        border: none;
+        cursor: pointer;  
+    }
+    .menu-button > .line {
+        height: 3px;
+        background-color: white;
+        display: block;
+    }
+} 
+
+@media (max-width: 768px) {
+    .main {
+        display: block;
+
+    }
+    .main-info {
+        padding: 50px;
+    }
+    .counter-group {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .modal-dialog {
+        flex-direction: column;
+    }
+    .modal-image, .modal-info {
+        width: 100%;
+        text-align: center;
+    }
+    .flats {
+        max-width: 250px;
+    }
 }
