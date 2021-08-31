@@ -1,13 +1,13 @@
 $(document).ready(function () {
-    var currentFloor = 2; // Переменная с текущим этажем
-    var counterUp = $(".counter-up"); // Кнопка увеличения этажа
-    var counterDown = $(".counter-down"); // Кнопка уменьшения этажа
-    var floorPath = $(".home-image path"); // Каждый отдельный этаж в SVG
-    var modal = $(".modal"); // Модальное окно
-    var modalCloseButton = $(".modal-close-button");
-    var viewFlatsButton = $(".view-flats");
-    var menuButton = $(".menu-button");
-    var navbarPanel = $(".navbar-panel");
+    let currentFloor = 2; // Переменная с текущим этажем
+    let counterUp = $(".counter-up"); // Кнопка увеличения этажа
+    let counterDown = $(".counter-down"); // Кнопка уменьшения этажа
+    let floorPath = $(".home-image path"); // Каждый отдельный этаж в SVG
+    let modal = $(".modal"); // Модальное окно
+    let modalCloseButton = $(".modal-close-button");
+    let viewFlatsButton = $(".view-flats");
+    let menuButton = $(".menu-button");
+    let navbarPanel = $(".navbar-panel");
 
     menuButton.on("click", function(){
         navbarPanel.toggle("fast");

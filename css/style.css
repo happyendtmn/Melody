@@ -281,7 +281,7 @@ path.current-floor{
     background-color: transparent;
 }
 
-.down-bar {
+.footer {
     background-color: #D7D7D7;
     display: flex;
     align-items: center;
@@ -290,11 +290,11 @@ path.current-floor{
     margin-top: 60px;
 }
 
-.down-logo {
+.footer-logo {
     margin-left: 50px;
 }
 
-.downbar-contacts {
+.footer-contacts {
     margin-left: 40px;
 }
 
@@ -303,40 +303,40 @@ path.current-floor{
 }
 
 .instagram-logo {
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .twitter-logo {
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .youtube-logo {
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
-.downbar-nav {
+.footer-nav {
     margin-left: 355px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     justify-content: space-between; 
     margin: 20px;
 }
 
-.downbar-menu {
+.footer-menu {
     list-style: none;
     display: flex;
     text-align: center;
+    margin-left: 150px;
 }
 
-.downbar-item {
+.footer-item {
     list-style: none;
     margin: 20px;
 
 }
 
-.downbar-link {
+.footer-link {
     text-decoration: none;
     font-style: normal;
     font-family: Roboto;
@@ -348,7 +348,7 @@ path.current-floor{
     color: #635854;
 }
 
-.downbar-text {
+.footer-text {
     display: block;
     color: #635854;
     margin-bottom: 4px;
@@ -357,14 +357,52 @@ path.current-floor{
     line-height: 16px;
 }
 
-.downbar-phone {
+.footer-phone {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     color: #635854;
     text-decoration: none;
 }
- 
+
+/*  Адаптив */
+
+@media (max-width: 1296px) {
+   .social-block {
+       display: contents;
+   }
+   .footer-phone {
+       font-size: 15px;
+   }
+   .footer-text {
+       font-size: 10px;
+   }
+   .footer-menu {
+       margin: auto;
+   }
+    .footer-item {
+       margin: 7px;
+   }
+   .facebook-logo {
+       margin-left: 30px;
+   }
+
+@media (max-width: 840px) {
+    .footer-menu {
+        display: inline-table;
+    }
+}
+
+@media (max-width: 620px) {
+    .footer-logo {
+        opacity: 0;
+    }
+    .footer-contacts {
+        margin-left: -50px;
+    }
+}
+    
+} 
 @media (max-width: 1400px) {
     .container {
         width: 90%;
