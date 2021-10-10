@@ -1,313 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ЖК Мелодия</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="navbar container">
-        <a href="./index.html" class="logo">
-          <img src="img/logo.svg" alt="Logo: ЖК Мелодия" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Cinema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <header class="header">
+    <div class="navbar  container">
+      <a href="/">
+        <img src="img/logo.svg" alt="logo">
         </a>
-          <div class="navbar-panel">
-            <nav class="navbar-nav">
-              <ul class="navbar-menu">
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Подобрать <br />квартиру</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Забронировать <br />квартиру</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Ход <br />строительства</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Проектная <br />декларация</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="navbar-contacts">
-              <span class="navbar-text">Закажите звонок:</span>
-              <a class="navbar-phone" href="tel:+78431234567">8 (843) 123-45-67</a>
-            </div>
-            <!-- /.navbar-contacts -->
-          </div>
-          <!-- /.navbar-panel -->
-          <button class="menu-button">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
-      </div>
-      <!-- /.navbar -->
-    </header>
-
-    <main class="main container">
-        <svg
-          class="home-image"
-          viewBox="0 0 734 640"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <rect width="734" height="640" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(-0.00408719) scale(0.0013624 0.0015625)" />
-            </pattern>
-            <image id="image0" width="740" height="640" xlink:href="img/home.png" />
-          </defs>
-          <path
-            data-floor="02"
-            d="M222 532L442.8 540L512 526.3V548L443.5 567.7L222 556.7V532Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="03"
-            d="M223 531V506L443.3 509.3L513 506V526L443.7 539L223 531Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path data-floor="04" d="M223 505V480H444H513V503L445 510L223 505Z" fill="#3595F6" fill-opacity="0.75" />
-          <path data-floor="05" d="M223 481V456L444.3 452.3L512 459V481H444" fill="#3595F6" fill-opacity="0.75" />
-          <path
-            data-floor="06"
-            d="M223 455V429L444.5 425.7L513 436.7V458L444 451.3L223 455Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="07"
-            d="M222 428V404.3L443 392L514 415V436.3L443 424L222 428Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="08"
-            d="M222 406V381L444.2 364.7L514 393.3V414L443.7 392.3L222 406Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="09"
-            d="M222 381V356L444.5 335.7L514 372.3V393L442 364.3L222 381Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="10"
-            d="M222 355V331L445 306.3L514 350.3V372L444.7 334L222 355Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="11"
-            d="M222 330V306L444.5 277.3L514 328.3V349L443.7 306.7L222 330Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="12"
-            d="M221 306V282L443.3 249L514 308.3V328L444 277.3L221 306Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="13"
-            d="M222 281V257L443.2 222L513 286V307L444.3 248.7L222 281Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="14"
-            d="M222 257V232L444.3 194L513 264.3V285L444 221L222 257Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="15"
-            d="M222 231V206L442.8 162.3L513 241.3V264L444 190.7L222 231Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="16"
-            d="M223 207V182L443 134L513 219V242L442.3 162.7L223 207Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="17"
-            d="M222 182V157L441.8 105L513 197.3V220L443.3 133.7L222 182Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-          <path
-            data-floor="18"
-            d="M222 157V131L444 74.3L513 176V197L443.7 105.3L222 157Z"
-            fill="#3595F6"
-            fill-opacity="0.75"
-          />
-        </svg>
-      
-      <div class="main-info">
-        <h2 class="main-title">Выберите желаемый этаж</h2>
-        <div class="counter-group">
-          <button class="counter-button counter-up">
-            <img class="counter-arrow counter-arrow-up" src="img/arrow.svg" alt="arrow-up" />
-          </button>
-          <span class="counter floor-counter">02</span>
-          <button class="counter-button counter-down">
-            <img class="counter-arrow counter-arrow-down" src="img/arrow.svg" alt="arrow-up" />
-          </button>
-        </div>
-        <!-- /.counter-group -->
-        <button class="button button-primary view-floor">Смотреть квартиры на этаже</button>
-      </div>
-      <!-- /.main-info -->
-    </main>
-    
-    <div class="modal">
-      <div class="modal-dialog">
-        <button class="modal-close-button">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3" />
-            <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3" />
-          </svg>
-        </button>
-        <div class="modal-image">
-          <h3 class="modal-title">Этаж <span class="modal-counter counter">02</span></h3>
-          <svg
-            class="flats"
-            viewBox="0 0 433 408"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <image id="image0" width="433" height="408" xlink:href="img/floor.png" />
-            <path d="M388 81V141H314V148H267.5V131H247V32.5H338.5V16H405V81H388Z" fill="#3595F6" fill-opacity="0.75" />
-            <path d="M314 148.5H268V200H367.5V205H387.5V141H314V148.5Z" fill="#3595F6" fill-opacity="0.75" />
-            <path
-              d="M314.192 252.662H268V200H367.916V204.602H388V268H314.192V252.662Z"
-              fill="#3595F6"
-              fill-opacity="0.75"
-            />
-            <path
-              d="M314 253H268.5V309H295.5V376H340V393H405V328.5H388V268.5H314V253Z"
-              fill="#3595F6"
-              fill-opacity="0.75"
-            />
-            <path
-              d="M218 394.5V264H247.5V273.5H267.5V310.5H294.5V375H259.5V394.5H218Z"
-              fill="#3595F6"
-              fill-opacity="0.75"
-            />
-            <path
-              d="M217 394.5V264H187.5V273.5H167.5V310.5H140.5V375H175.5V394.5H217Z"
-              fill="#3595F6"
-              fill-opacity="0.75"
-            />
-            <path
-              d="M121 252H166.5V309H139.5V376H95V393H30V328.5H47V273.5H121V252Z"
-              fill="#3595F6"
-              fill-opacity="0.75"
-            />
-            <path d="M119.5 273.5H46V198H167V250.822H119.5V273.5Z" fill="#3595F6" fill-opacity="0.75" />
-            <path d="M124.729 116H46V198H167V145.178H124.729V116Z" fill="#3595F6" fill-opacity="0.75" />
-            <path
-              d="M46.5 81V115.5H125V144.5H164V131H184.5V32.5H93V16H28V81H46.5Z"
-              fill="#3595F6"
-              fill-opacity="0.75"
-            />
-          </svg>
-        </div>
-        <!-- /.modal-image -->
-        <div class="modal-info">
-          <h3 class="modal-title">Выберите квартиру</h3>
-          <ul class="flat-list">
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-            <li class="flat-item">
-              <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
-            </li>
-          </ul>
-          <p class="modal-alert">
-            Квартиры, отмеченные серым, <br />
-            уже выкуплены
-          </p>
-        </div>
-        <!-- /.modal-info -->
-      </div>
-      <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-    
-    
-      <div class="footer">
-        <a class="footer-logo" href="index.html">
-            <img src="img/logo-down.svg" alt="logodown">
-        </a>
-        <div class="footer-contacts">
-          <span class="footer-text">Закажите звонок:</span>
-          <a class="footer-phone" href="tel:+78431234567">8 (843) 123-45-67</a>
-        </div>
-        <div class="social-block">
-          <a href="https://www.facebook.com/" class="facebook-logo"> <img src="img/001-facebook.svg" alt="facebook.com"></a>
-          <a href="https://www.instagram.com/?hl=ru" class="instagram-logo"> <img src="img/002-instagram.svg" alt="instagram.com"></a>
-          <a href="https://twitter.com/" class="twitter-logo"><img src="img/003-twitter.svg" alt="twitter.com"></a>
-          <a href="https://www.youtube.com/" class="youtube-logo"><img src="img/004-youtube.svg" alt="youtube.com"></a>
-        </div>
-        <nav class="footer-nav">
-          <ul class="footer-menu">
-            <li class="footer-item">
-              <a href="#" class="footer-link">Политика конфиденциальности</a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">Публичная оферта</a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">Контакты</a>
-            </li>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Главная</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Фильмы</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Кинотеатры</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">События</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Поддержка</a>
             </li>
           </ul>
         </nav>
+        <div class="user">
+          <span class="">Привет, Пётр</span>
+          <img class="avatar" src="img/avatar.jpg" alt="">
+        </div>
+    </div>
+    <!-- /.navbar -->
+    <div class="film container">
+      <div class="film-info">
+        <small class="film-title-small">Avengers: Infinity War</small>
+        <h1 class="film-title">Мстители: война бесконечности</h1>
+        <p class="film-discription">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+        </p>
+        <div class="film-details">
+          <div class="time">
+            <img src="img/clock 1.svg" alt="" class="time-icon">
+            <span class="time-counter">240 мин</span>
+          </div>
+          <div class="rating">
+            <img src="img/imdb.png" alt="" class="rating-icon">
+            <span class="rating-counter">
+              <strong class="rating-current">9.2</strong> / 10
+            </span>
+          </div>
+        </div>
+        <!-- /.film-details -->
       </div>
-  </body>
+      <!-- /.film-info -->
+      <a href="#" class="film-trailer">
+        <svg 
+        width="100" 
+        height="100" 
+        viewBox="0 0 100 100" 
+        fill="none"        
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="50" fill="white"/>
+        <g clip-path="url(#clip0)">
+        <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        </a>
+      <!-- /.film-trailer -->
+    </div>
+    <!-- /.film -->
+    <div class="session container">
+        <div class="session-date">
+          <span class="session-label">Дата</span>
+          <div class="session-date-block">
+            
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">27</span>
+              <span class="session-week">Пт</span>
+            </div>
+
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">28</span>
+              <span class="session-week">Сб</span>
+            </div>
+            
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">29</span>
+              <span class="session-week">Вс</span>
+            </div>
+
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">30</span>
+              <span class="session-week">Пн</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.date -->
+        <div class="session-cinema">
+          <span class="session-label">Кинотеатр</span>
+          <select name="cinema" class="select select-cinema">
+            <option value="Синема Парк, ул. Максима Горького 70, ТЦ "Гудвин"">Синема Парк, ул. Максима Горького 70, ТЦ "Гудвин"</option>
+            <option value="Атмос Синема, Чаркова 60, ТЦ "Сити Молл"">Атмос Синема, Чаркова 60, ТЦ "Сити Молл"</option>
+            <option value="Каро 6, Московский Тракт 118, ТЦ "Колумб"">Каро 6, Московский Тракт 118, ТЦ "Колумб"</option>
+            <option value="Киномакс, Дмитрия Менделеева 1, ТЦ "Кристалл"">Киномакс, Дмитрия Менделеева 1, ТЦ "Кристалл"</option>
+          </select>
+        </div>
+        <!-- /.cinema -->
+        <div class="session-time">
+          <span class="session-label">Время</span>
+          <select name="cinema" class="select select-time">
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+          </select>
+        </div>
+        <!-- /.session-time -->
+    </div>
+    <!-- /.session -->
+  </header>
+</body>
 </html>
